@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+   overflow-x: hidden;
+   position: relative;
+}
+
+
+h1 {
+    color: #426696;
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+h2,
+p {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+h3 {
+    color: #426696;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+main {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass {
+    background: white;
+    min-height: 80vh;
+    /* width: 60%; */
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+}
+
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+}
+
+.user-img {
+    border-radius: 50%;
+    width: 35%;
+}
+
+.link {
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+}
+
+.link h2 {
+    padding: 0rem 2rem;
+}
+
+.pro {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 2rem;
+    color: white;
+    padding: 10px;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.pro img {
+    position: absolute;
+    top: -20%;
+    right: 15%;
+}
+
+.pro h2 {
+    color: white;
+    width: 35%;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.games {
+    flex: 2;
+}
+
+.circle1,
+.circle2 {
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 1%;
+    right: 13%;
+}
+
+.circle2 {
+ bottom: 1%;
+ left: 13%;
+}
+
+/* GAMES */
+.status {
+    padding: 2rem 2rem;
+}
+
+.status input {
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border: none;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.games {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.cards {
+    display: flex;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.9));
+    border-radius: 1rem;
+    margin: 2rem 1rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+    justify-content: space-between;
+}
+
+.progress {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 60%;
+}
+
+.progress-sackboy {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-sackboy::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 40%;
+}
+
+.progress-spiderman {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-spiderman::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 90%;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.percentage {
+    font-weight: bold;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 1023px) {
+    .glass {
+        width: 70%;
+    }
+}
+
+@media (max-width: 769px) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .dashboard {
+        width: 30%
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link {
+        margin: 1rem 0rem;
+    }
+
+    .pro {
+        width: 60%;
+        margin-bottom: 16px;
+    }
+
+    .pro h2 {
+        font-size: 20px;
+    }
+
+    .pro img {
+        position: absolute;
+        top: -15%;
+        right: 5%;
+    }
+
+    .games {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .cards {
+        margin: 1rem 1rem;
+        padding: 1rem;
+    }
+
+    .card-info h2 {
+        font-size: 1rem;
+    }
+
+    .progress,
+    .progress-sackboy,
+    .progress-spiderman {
+        height: 10%;
+    }
+
+    .circle1 {
+        top: 1%;
+        right: -15%;
+    }
+    
+    .circle2 {
+     bottom: 1%;
+     left: -15%;
+    }
+}
+
+@media (max-width: 426px) {
+    main {
+        padding: 1rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .dashboard {
+        padding: 10px 0;
+        justify-content: start;
+    }
+
+    .dashboard p {
+        font-size: 13px;
+        padding: 0rem 1rem;
+    }
+
+    .user {
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+    .user-img {
+        width: 55%;
+    }
+
+    .pro {
+        display: none;
+    }
+
+    .link {
+        padding: 0;
+        display: block;
+        margin-bottom: 3rem;
+    }
+
+    .link h2 {
+        font-size: 1rem;
+    }
+
+    .link img {
+        width: 20%;
+    }
+    
+    .games {
+        padding: 10px 0;
+    }
+
+    .status {
+        padding: 0 1rem;
+    }
+
+    .status input {
+        width: 100%;
+    }
+
+    .cards {
+        padding: 10px;
+        display: block;
+    }
+
+    .card-info {
+        gap: 10px;
+        justify-content: unset;
+    }
+
+    .card-info p {
+        font-size: 13px;
+    }
+
+    .card-info h2 {
+        font-size: 14px;
+    }
+
+    .cards img {
+        width: 35%;
+    }
+
+    .percentage {
+        font-size: 16px;
+    }
+
+    .progress, .progress-sackboy, .progress-spiderman {
+        height: 10px;
+    }
+}
